@@ -1,7 +1,7 @@
 (() => {
   const el = sel => document.querySelector(sel)
   const els = sel => Array.from(document.querySelectorAll(sel))
-  const state = { editingId: null, apiBase: localStorage.getItem('srv-d2roivh5pdvs73e2v8rg') || '' }
+  const state = { editingId: null, apiBase: localStorage.getItem('https://backendseminario-1hmu.onrender.com') || '' }
 
   const inputId = el('#id')
   const inputTitulo = el('#titulo')
@@ -21,7 +21,7 @@
 
   function setApiBase(value) {
     state.apiBase = (value || '').replace(/\/$/, '')
-    localStorage.setItem('API_BASE', state.apiBase)
+    localStorage.setItem('https://backendseminario-1hmu.onrender.com', state.apiBase)
     apiBaseInput.value = state.apiBase
   }
 
