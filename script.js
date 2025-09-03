@@ -25,7 +25,7 @@
     apiBaseInput.value = state.apiBase
   }
 
-  async function api(path = '', options = {}) {
+  function api(path = '', options = {}) {
     const base = state.apiBase
     if (!base) {
       Swal.fire({ icon:'warning', title:'Configura la API', text:'Ingresa la URL del backend y presiona Guardar URL.' })
